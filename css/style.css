@@ -1,3 +1,18 @@
+/* =============================
+   Variables
+============================= */
+:root {
+  --color-text: #d9d9d9;
+  --color-bg: #111215;
+  --color-navbar-bg-scrolled: rgb(20, 20, 20);
+  --color-navbar-border: gray;
+  --color-navbar-border-scrolled: rgba(128, 128, 128, 0);
+  --font-family-base: "Poppins", sans-serif, Arial, sans-serif;
+}
+
+/* =============================
+   Global Reset and Base Styles
+============================= */
 *,
 *::before,
 *::after {
@@ -10,57 +25,66 @@ html {
 
 body {
   margin: 0;
-  background-color: #111215;
-  font-family: "Poppins", sans-serif, Arial !important;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family: var(--font-family-base) !important;
 }
 
-/* Continue hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
-/* #about-section {
-  margin-top: -2px;
-} */
-
+/* =============================
+   Navbar Styles
+============================= */
 .navbar {
-  /* Understand How Transition and Transform Works */
   position: fixed;
-  top: 0px;
-  background-color: transparent;
+  top: 0;
   left: 20px;
   right: 20px;
-  transition: all 0.5s ease-in-out;
   padding: 30px 20px;
-  /* padding-top: 30px; */
-  border-bottom: 4px solid gray;
+  border-bottom: 4px solid var(--color-navbar-border);
+  background-color: transparent;
+
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 3vw;
+
   font-size: large;
+  transition: all 0.5s ease-in-out;
   z-index: 10;
 }
 
-/* Navbar when scrolled */
 .navbar-scrolled {
   left: 0;
   right: 0;
   padding-right: 40px;
-  background-color: rgb(20, 20, 20);
-  border-bottom: 4px solid rgba(128, 128, 128, 0);
+  background-color: var(--color-navbar-bg-scrolled);
+  border-bottom-color: var(--color-navbar-border-scrolled);
 }
 
 .navbar a {
-  color: #d9d9d9;
   text-decoration: none;
+  color: var(--color-text);
 }
 
 .navbar a:hover {
   color: #ffffff;
 }
 
+/* =============================
+   Home Page Section
+============================= */
 #home-page {
+  height: 100vh;
+  padding-top: 40px;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #d9d9d9;
+
+  color: var(--color-text);
+  font-size: 60px;
+
   background: url("../assets/images/background-1.png");
+  background-size: 100% 100%;
+
   mask-image: linear-gradient(
     to bottom,
     transparent 0%,
@@ -75,23 +99,16 @@ body {
     black 80%,
     transparent 100%
   );
-  /* linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), */
-  background-size: 100% 100%;
-  /* mix-blend-mode: overlay; */
-  height: 100vh;
-  font-size: 60px;
-  padding-top: 40px;
 }
-/* margin: 0;
-  padding: 0 8px 15vh 8px;
-  gap: 1vw; */
 
+/* =============================
+   Intro Section
+============================= */
 .intro {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* height: 100%; */
 }
 
 h1,
@@ -110,26 +127,40 @@ h3 {
   font-weight: 100;
 }
 
+/* =============================
+   Profile Picture Styles
+============================= */
 .profile-pic {
   height: 500px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 10px 5px #d9d9d9;
   margin: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 5px var(--color-text);
 }
 
+/* =============================
+   Bold Words Utility
+============================= */
 .bold-words {
   font-weight: 900;
-  text-shadow: 0.5px 0.5px #d9d9d9, -0.5px -0.5px #d9d9d9;
+  text-shadow: 0.5px 0.5px var(--color-text), -0.5px -0.5px var(--color-text);
 }
 
+/* =============================
+   About Section
+============================= */
 #about-section {
-  /* background: url("../assets/images/background-3.png"),
-    url("../assets/images/background-2.png");
-  background-position: center, center;
-  background-size: contain, 100% 100%;
-  background-repeat: no-repeat, no-repeat;
-  height: 100vh; */
+  margin-top: 100px;
+  padding: 100px;
+  gap: 1vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   background: url("../assets/images/background-3.png");
+  background-size: 100% 100%;
+
   mask-image: linear-gradient(
     to bottom,
     transparent 0%,
@@ -144,112 +175,106 @@ h3 {
     black 80%,
     transparent 100%
   );
-  background-size: 100% 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-  padding: 100px;
-  gap: 1vw;
 }
 
 .about-me {
   max-width: 800px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
-}
-
-/* .about-profile-pic {
-  height: 400px;
-  box-shadow: 0px 0px 10px 5px #d9d9d9;
-  margin: 8px;
-} */
-
-.skills {
-  padding: 10px;
-  display: flex;
-  /* flex-direction: column; */
-  flex-wrap: wrap;
-  gap: 24px;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.skills > div {
-  background-color: #111215;
-  border-radius: 2px;
-  padding: 15px;
-  box-shadow: 0px 0px 10px 5px #d9d9d9;
 }
 
 .about-me > p {
-  /* background: url("../assets/images/background-3.png"); */
   font-size: 20px;
   margin: 0;
   padding: 20px;
   text-align: center;
 }
 
+/* =============================
+   Skills Section
+============================= */
+.skills {
+  padding: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.skills > div {
+  background-color: var(--color-bg);
+  border-radius: 2px;
+  padding: 15px;
+  box-shadow: 0 0 10px 5px var(--color-text);
+}
+
+/* =============================
+   Responsive Media Queries
+============================= */
+
+/* Medium devices (<= 992px) */
 @media (max-width: 992px) {
   #home-page {
     flex-direction: column-reverse;
-    /* height: auto; */
-    /* continue here 03/20  */
   }
+
   .profile-pic {
     height: 450px;
   }
-  /* .intro {
-    height: auto;
-  } */
-  /* #about-section {
-  } */
 }
 
+/* Small devices (<= 576px) */
 @media (max-width: 576px) {
   #home-page {
     font-size: 30px;
   }
+
   .profile-pic {
     height: 250px;
   }
+
   .navbar {
     padding: 20px 10px 10px 10px;
-    justify-content: center;
-    font-size: small;
     justify-content: space-around;
+    font-size: small;
   }
+
   h2 {
     font-size: 25px;
   }
+
   h3 {
     font-size: 20px;
   }
 }
 
-/* Media query for devices with a minimum width of 993px
-and a height between 500px and 625px, such as the Nest Hub */
+/* Nest Hub-like devices */
 @media screen and (min-width: 993px) and (max-height: 625px) and (min-height: 500px) {
   #home-page {
     font-size: 40px;
   }
+
   .profile-pic {
     height: 300px;
   }
+
   .navbar {
     padding: 15px 10px 10px 10px;
     justify-content: center;
     font-size: medium;
     gap: 2vw;
   }
+
   h2 {
     font-size: 30px;
   }
+
   h3 {
     font-size: 25px;
   }
