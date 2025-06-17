@@ -116,6 +116,7 @@ h2,
 h3 {
   margin: 0;
   text-align: center;
+  color: #eaeaea;
 }
 
 h2 {
@@ -213,6 +214,10 @@ h3 {
   padding: 15px;
   box-shadow: 0 0 10px 2px var(--color-text);
 }
+
+/* =============================
+   Project Section
+============================= */
 
 /* =============================
    Responsive Media Queries
