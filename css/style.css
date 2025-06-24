@@ -30,6 +30,10 @@ body {
   font-family: var(--font-family-base) !important;
 }
 
+section {
+  padding: 1.5rem;
+}
+
 /* =============================
    Navbar Styles
 ============================= */
