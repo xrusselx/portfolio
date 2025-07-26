@@ -219,6 +219,10 @@ h3 {
   box-shadow: 0 0 10px 2px var(--color-text);
 }
 
+.skills > div:hover {
+  animation: shake 0.4s;
+}
+
 /* =============================
    Project Section
 ============================= */
@@ -264,6 +268,31 @@ h3 {
   font-size: 0.9rem;
   color: #666;
   margin: 0;
+}
+
+/* =============================
+   Animations / Keyframes
+============================= */
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg) translateX(0);
+  }
+  20% {
+    transform: rotate(2deg) translateX(2px);
+  }
+  40% {
+    transform: rotate(-2deg) translateX(-2px);
+  }
+  60% {
+    transform: rotate(2deg) translateX(2px);
+  }
+  80% {
+    transform: rotate(-2deg) translateX(-2px);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0);
+  }
 }
 
 /* =============================
