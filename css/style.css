@@ -235,7 +235,7 @@ h3 {
 }
 
 .project-card {
-  width: 250px; /* Small card size */
+  width: 280px; /* Small card size */
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -259,8 +259,9 @@ h3 {
   padding: 1rem;
 }
 
-.project-card h4 {
-  font-size: 1.1rem;
+.project-card h3 {
+  color: #666;
+  font-size: 1.125rem;
   margin: 0.5rem 0 0.25rem;
 }
 
