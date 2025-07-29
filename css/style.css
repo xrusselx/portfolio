@@ -236,6 +236,7 @@ h3 {
 
 .project-card {
   width: 280px;
+  padding: 0.4em;
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -253,6 +254,7 @@ h3 {
   height: 150px;
   object-fit: cover;
   display: block;
+  border-radius: 5px;
 }
 
 .project-card .description {
