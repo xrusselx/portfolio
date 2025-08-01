@@ -258,7 +258,7 @@ h3 {
 }
 
 .project-card .description {
-  padding: 0.3rem 1rem;
+  padding: 0.3rem 1rem 0.5rem;
 }
 
 .project-card a {
@@ -268,7 +268,7 @@ h3 {
 .project-card h3 {
   color: #666;
   font-size: 1.125rem;
-  margin: 0.5rem 0 0.25rem;
+  margin: 0.25rem 0;
   text-align: left;
 }
 
