@@ -254,6 +254,7 @@ h3 {
   object-fit: cover;
   display: block;
   border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.11);
 }
 
 .project-card .description {
