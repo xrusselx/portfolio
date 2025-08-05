@@ -258,7 +258,8 @@ h3 {
 }
 
 .project-card {
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
   padding: 0.4em;
   background-color: #fff;
   border-radius: 12px;
