@@ -84,7 +84,7 @@ section {
   align-items: center;
 
   color: var(--color-text);
-  font-size: 60px;
+  font-size: 3.75rem; /* 60px */
 
   background: url("../assets/images/background-1.png");
   background-size: 100% 100%;
@@ -124,11 +124,11 @@ h3 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 3.13rem; /* 50px */
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 2.19rem; /* 35px */
   font-weight: 100;
 }
 
@@ -192,7 +192,7 @@ h3 {
 }
 
 .about-me > p {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   margin: 0;
   padding: 20px;
   text-align: center;
@@ -291,13 +291,13 @@ h3 {
 
 .project-card h3 {
   color: #666;
-  font-size: 1.125rem;
+  font-size: 1.13rem; /* 18px */
   margin: 0.25rem 0;
   text-align: left;
 }
 
 .project-card p {
-  font-size: 0.9rem;
+  font-size: 0.9rem; /* 14.4px */
   color: #666;
   margin: 0;
 }
@@ -345,7 +345,7 @@ h3 {
 /* Small devices (<= 576px) */
 @media (max-width: 576px) {
   #home-page {
-    font-size: 30px;
+    font-size: 1.88rem; /* 30px */
   }
 
   .profile-pic {
@@ -359,11 +359,11 @@ h3 {
   }
 
   h2 {
-    font-size: 25px;
+    font-size: 1.56rem; /* 25px */
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
   }
 
   /* #about-section p,
@@ -379,7 +379,7 @@ h3 {
 /* Nest Hub-like devices */
 @media screen and (min-width: 993px) and (max-height: 625px) and (min-height: 500px) {
   #home-page {
-    font-size: 40px;
+    font-size: 2.5rem; /* 40px */
   }
 
   .profile-pic {
@@ -394,10 +394,10 @@ h3 {
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 1.88rem; /* 30px */
   }
 
   h3 {
-    font-size: 25px;
+    font-size: 1.56rem; /* 25px */
   }
 }
