@@ -88,7 +88,9 @@ section {
 
   background: url("../assets/images/background-1.png");
   background-size: 100% 100%;
+}
 
+.section-mask {
   mask-image: linear-gradient(
     to bottom,
     transparent 0%,
@@ -165,21 +167,6 @@ h3 {
 
   background: url("../assets/images/background-2.png");
   background-size: 100% 100%;
-
-  mask-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    black 20%,
-    black 80%,
-    transparent 100%
-  );
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    black 20%,
-    black 80%,
-    transparent 100%
-  );
 }
 
 .about-me {
@@ -232,21 +219,6 @@ h3 {
 
   background: url("../assets/images/background-3.png");
   background-size: 100% 100%;
-
-  mask-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    black 20%,
-    black 80%,
-    transparent 100%
-  );
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    black 20%,
-    black 80%,
-    transparent 100%
-  );
 }
 
 .project-grid {
@@ -348,6 +320,31 @@ h3 {
     font-size: 1.88rem; /* 30px */
   }
 
+  .section-mask {
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%
+    );
+  }
+
+  #about-section {
+    margin-top: 20px;
+  }
+
+  #project-section {
+    margin-top: 20px;
+  }
+
   .profile-pic {
     height: 250px;
   }
@@ -365,11 +362,6 @@ h3 {
   h3 {
     font-size: 1.25rem; /* 20px */
   }
-
-  /* #about-section p,
-  .skills div {
-    font-size: 14px;
-  } */
 
   .skills > div {
     padding: 8px;
