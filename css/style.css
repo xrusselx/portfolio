@@ -345,6 +345,10 @@ h3 {
     margin-top: 20px;
   }
 
+  .project-card {
+    max-width: 280px;
+  }
+
   .profile-pic {
     height: 250px;
   }
