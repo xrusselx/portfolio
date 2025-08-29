@@ -277,8 +277,13 @@ h3 {
 /* =============================
    Contact Section
 ============================= */
-/* #contact-section {
-} */
+#contact-section {
+  margin-top: 6.25rem; /* 100px */
+  padding: 6.25rem 0.94rem; /* 100px 15px */
+
+  background: linear-gradient(to bottom, #111215fd 0%, #1e1f21 100%);
+  /* background: #1e1f21; */
+}
 
 form {
   background-color: var(--color-bg);
