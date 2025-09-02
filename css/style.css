@@ -282,15 +282,17 @@ h3 {
   padding: 6.25rem 0.94rem; /* 100px 15px */
 
   background: linear-gradient(to bottom, #111215fd 0%, #1e1f21 100%);
-  /* background: #1e1f21; */
+  /* background: radial-gradient(circle at center, #111215fd 0%, #1e1f21 100%); */
+  /* background: url(../assets/images/background-4.png);
+  background-size: 100% 100%; */
 }
 
 form {
-  background-color: var(--color-bg);
-  /* box-shadow: 0 0 10px 2px var(--color-text); */
+  /* background-color: var(--color-bg); */
+  /* box-shadow: 0 0 10px 2px var(--color-text  ); */
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   width: 300px;
 }
 label {
