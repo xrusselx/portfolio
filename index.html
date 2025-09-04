@@ -134,16 +134,22 @@
       <form class="contact-form" action="#" method="POST">
         <p class="content-text">Send me an email</p>
 
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        </div class="form-group message">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
 
-        <button type="submit">Send</button>
+        <button class="form-button" type="submit">Send</button>
       </form>
       <a
         href="mailto:russelsaints@gmail.com?subject=Hello%20There&body=I%20saw%20your%20portfolio%20and..."

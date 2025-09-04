@@ -294,7 +294,42 @@ h3 {
   /* width: 300px; */
   padding: 20px;
   border-radius: 10px;
-  /* display: grid; */
+  display: grid;
+  gap: 1rem;
+}
+
+.form-group,
+form > .content-text,
+.form-button {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .contact-form {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "intro intro"
+      "name message"
+      "email message"
+      "button button";
+  }
+
+  .content-text {
+    grid-area: intro;
+  }
+  .form-group:nth-of-type(1) {
+    grid-area: name;
+  }
+  .form-group:nth-of-type(2) {
+    grid-area: email;
+  }
+  .form-group.message {
+    grid-area: message;
+  }
+  button {
+    grid-area: button;
+  }
 }
 
 label {
@@ -314,6 +349,7 @@ textarea {
 
 form > button {
   /* width: 100%; */
+  width: 300px;
   margin-top: 15px;
   padding: 10px;
   border: none;
