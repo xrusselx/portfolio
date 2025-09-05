@@ -298,9 +298,7 @@ h3 {
   gap: 1rem;
 }
 
-.form-group,
-form > .content-text,
-.form-button {
+.form-group {
   display: flex;
   flex-direction: column;
 }
@@ -317,6 +315,7 @@ form > .content-text,
 
   .content-text {
     grid-area: intro;
+    justify-self: left;
   }
   .form-group:nth-of-type(1) {
     grid-area: name;
@@ -327,8 +326,9 @@ form > .content-text,
   .form-group.message {
     grid-area: message;
   }
-  button {
+  form > button {
     grid-area: button;
+    justify-self: right;
   }
 }
 
