@@ -291,14 +291,17 @@ h3 {
   background-color: var(--color-bg);
   /* box-shadow: 0 0 10px 2px var(--color-text  ); */
   /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); */
-  /* width: 300px; */
+  width: 50rem;
+  margin: auto auto;
   padding: 20px;
   border-radius: 10px;
   display: grid;
   gap: 1rem;
 }
 
-.form-group {
+.form-group,
+.contact-form > .content-text,
+.form-button {
   display: flex;
   flex-direction: column;
 }
@@ -313,9 +316,11 @@ h3 {
       "button button";
   }
 
-  .content-text {
+  .contact-form > .content-text {
     grid-area: intro;
     justify-self: left;
+    font-size: 2rem;
+    padding: 0;
   }
   .form-group:nth-of-type(1) {
     grid-area: name;
@@ -353,7 +358,8 @@ form > button {
   margin-top: 15px;
   padding: 10px;
   border: none;
-  background: #007bff;
+  color: var(--color-text);
+  background: #5c5f63;
 }
 
 /* =============================
