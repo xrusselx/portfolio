@@ -331,7 +331,7 @@ h3 {
   .form-group.message {
     grid-area: message;
   }
-  form > button {
+  .form-button {
     grid-area: button;
     justify-self: right;
   }
@@ -361,7 +361,7 @@ form textarea {
   /* resize: vertical; */
 }
 
-form > button {
+.form-button {
   /* width: 100%; */
   width: 300px;
   margin-top: 15px;
