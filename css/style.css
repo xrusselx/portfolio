@@ -332,13 +332,18 @@ form textarea {
 
 .form-button {
   width: 100%;
-  /* width: 300px; */
   margin-top: 15px;
   padding: 10px;
   border: none;
+  border-radius: 6px;
   color: var(--color-text);
-  background: #5c5f63;
+  background: #4b5563;
   cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #4b586d; /* just a little lighter */
+  border-color: #4b586d; /* keep border consistent */
 }
 
 /* =============================
@@ -372,7 +377,7 @@ form textarea {
 
 /* Medium devices (<= 992px) */
 
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .contact-form {
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
