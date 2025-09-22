@@ -309,6 +309,13 @@ h3 {
   background-size: 100% 100%; */
 }
 
+#contact-section > .content-text {
+  font-size: 1rem;
+  padding-top: 0;
+  font-style: italic;
+  line-height: 1;
+}
+
 .contact-form {
   /* background-color: var(--color-bg); */
   /* box-shadow: 0 0 10px 2px var(--color-text  ); */
