@@ -82,7 +82,7 @@ section {
 /* =============================
    Home Page Section
 ============================= */
-#home-page {
+#home {
   height: 100vh;
   padding-top: 2.5rem; /* 40px */
 
@@ -162,7 +162,7 @@ h3 {
 /* =============================
    About Section
 ============================= */
-#about-section {
+#about {
   margin-top: 6.25rem; /* 100px */
   padding: 6.25rem 0.94rem; /* 100px 15px */
   gap: 1vw;
@@ -213,7 +213,7 @@ h3 {
 /* =============================
    Project Section
 ============================= */
-#project-section {
+#project {
   margin-top: 6.25rem; /* 100px */
   padding: 6.25rem 0.94rem; /* 100px 15px */
 
@@ -299,7 +299,7 @@ h3 {
 /* =============================
    Contact Section
 ============================= */
-#contact-section {
+#contact {
   margin-top: 6.25rem; /* 100px */
   padding: 6.25rem 0.94rem; /* 100px 15px */
 
@@ -309,7 +309,7 @@ h3 {
   background-size: 100% 100%; */
 }
 
-#contact-section > .content-text {
+#contact > .content-text {
   font-size: 1rem;
   padding-top: 0;
   font-style: italic;
@@ -439,7 +439,7 @@ form textarea {
 }
 
 @media (max-width: 992px) {
-  #home-page {
+  #home {
     flex-direction: column-reverse;
   }
 
@@ -450,7 +450,7 @@ form textarea {
 
 /* Small devices (<= 576px) */
 @media (max-width: 576px) {
-  #home-page {
+  #home {
     font-size: 1.88rem; /* 30px */
   }
 
@@ -471,11 +471,11 @@ form textarea {
     );
   }
 
-  #about-section {
+  #about {
     margin-top: 1.25rem; /* 20px */
   }
 
-  #project-section {
+  #project {
     margin-top: 1.25rem; /* 20px */
   }
 
@@ -508,7 +508,7 @@ form textarea {
 
 /* Nest Hub-like devices */
 @media screen and (min-width: 993px) and (max-height: 625px) and (min-height: 500px) {
-  #home-page {
+  #home {
     font-size: 2.5rem; /* 40px */
   }
 
