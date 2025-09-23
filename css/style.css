@@ -213,7 +213,7 @@ h3 {
 /* =============================
    Project Section
 ============================= */
-#project {
+#projects {
   margin-top: 6.25rem; /* 100px */
   padding: 6.25rem 0.94rem; /* 100px 15px */
 
@@ -475,7 +475,7 @@ form textarea {
     margin-top: 1.25rem; /* 20px */
   }
 
-  #project {
+  #projects {
     margin-top: 1.25rem; /* 20px */
   }
 
