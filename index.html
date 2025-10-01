@@ -139,22 +139,45 @@
     <section id="contact" class="section-mask">
       <h2 class="bold-words">Contact</h2>
       <p class="content-text">Let's build your website</p>
-      <form class="contact-form" action="#" method="POST">
+      <form
+        class="contact-form"
+        action="mailto:russelsaints@gmail.com?subject=Hello%20There&body=I%20saw%20your%20portfolio%20and..."
+        method="POST"
+        enctype="text/plain"
+      >
         <p class="content-text">Send me an email</p>
 
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
         </div>
 
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
         </div>
 
         <div class="form-group message">
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            rows="4"
+            required
+          ></textarea>
         </div>
 
         <button class="form-button" type="submit">Send Email</button>
