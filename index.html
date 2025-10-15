@@ -12,13 +12,13 @@
   </head>
   <body>
     <nav class="navbar">
-      <a href="#home-page">Home</a>
-      <a href="#about-section">About</a>
-      <a href="#project-section">Projects</a>
-      <a href="">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
 
-    <section id="home-page" class="section-mask">
+    <section id="home" class="section-mask">
       <div class="intro">
         <h1 class="bold-words">RUSSEL SANTOS</h1>
         <h2>
@@ -33,10 +33,10 @@
       />
     </section>
 
-    <section id="about-section" class="section-mask">
+    <section id="about" class="section-mask">
       <div class="about-me">
         <h2 class="bold-words">About Me</h2>
-        <p>
+        <p class="content-text">
           Hi! I'm a workforce data analyst and an aspiring web developer
           currently learning how to build modern, responsive websites. I love
           solving problems and enjoy turning ideas into real, working projects
@@ -70,15 +70,17 @@
       </div>
     </section>
 
-    <section id="project-section" class="section-mask">
+    <section id="projects" class="section-mask">
       <h2 class="bold-words">Projects</h2>
       <div class="project-grid">
         <div class="project-card">
           <a href="https://xrusselx.github.io/tindog/" target="_blank">
-            <img
-              src="./assets/images/tindog.png"
-              alt="Screenshot of Tindog page"
-            />
+            <div class="card-image">
+              <img
+                src="./assets/images/tindog.png"
+                alt="Screenshot of Tindog page"
+              />
+            </div>
             <div class="description">
               <h3>Tindog</h3>
               <p>Landing page</p>
@@ -88,10 +90,12 @@
 
         <div class="project-card">
           <a href="https://xrusselx.github.io/dice-game/" target="_blank">
-            <img
-              src="./assets/images/dice-game.png"
-              alt="Screenshot of Dice Game page"
-            />
+            <div class="card-image">
+              <img
+                src="./assets/images/dice-game.png"
+                alt="Screenshot of Dice Game page"
+              />
+            </div>
             <div class="description">
               <h3>Dice Game</h3>
               <p>Browser-based game</p>
@@ -101,10 +105,12 @@
 
         <div class="project-card">
           <a href="https://xrusselx.github.io/drum-kit/" target="_blank">
-            <img
-              src="./assets/images/drum-kit.png"
-              alt="Screenshot of Drum Kit page"
-            />
+            <div class="card-image">
+              <img
+                src="./assets/images/drum-kit.png"
+                alt="Screenshot of Drum Kit page"
+              />
+            </div>
             <div class="description">
               <h3>Drum Kit</h3>
               <p>Interactive sound app</p>
@@ -114,10 +120,12 @@
 
         <div class="project-card">
           <a href="https://xrusselx.github.io/simon-game/" target="_blank">
-            <img
-              src="./assets/images/simon-game.png"
-              alt="Screenshot of Simon Game page"
-            />
+            <div class="card-image">
+              <img
+                src="./assets/images/simon-game.png"
+                alt="Screenshot of Simon Game page"
+              />
+            </div>
             <div class="description">
               <h3>Simon Game</h3>
               <p>Memory game</p>
@@ -128,8 +136,34 @@
     </section>
 
     <br />
-    <p><a href="./resume/resume.html">About</a></p>
-    <p><a href="./public/contact.html">Contact</a></p>
+    <section id="contact" class="section-mask">
+      <h2 class="bold-words">Contact</h2>
+      <p class="content-text">Let's build your website</p>
+      <form id="contact-form" class="contact-form">
+        <p class="content-text">Send me an email</p>
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group message">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <button class="form-button" type="submit">Send Email</button>
+      </form>
+      <a
+        href="mailto:russelsaints@gmail.com?subject=Hello%20There&body=I%20saw%20your%20portfolio%20and..."
+      >
+      </a>
+    </section>
 
     <hr />
     <footer>
