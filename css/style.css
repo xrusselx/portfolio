@@ -504,6 +504,10 @@ form textarea {
   .skills > div {
     padding: 0.5rem; /* 8px */
   }
+
+  #contact > .content-text {
+    font-size: 0.875rem;
+  }
 }
 
 /* Nest Hub-like devices */
