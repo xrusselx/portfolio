@@ -360,14 +360,19 @@ form textarea {
 }
 
 .form-button {
-  width: 100%;
+  /* width: 100%; */
+  height: 2.75rem;
+  padding: 0.75rem 1.75rem;
+  min-width: 8.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
   margin-top: 15px;
-  padding: 10px;
   border: none;
-  border-radius: 6px;
   color: var(--color-text);
   background: #4b5563;
   cursor: pointer;
+  justify-self: right;
 }
 
 .form-button:hover {
@@ -404,7 +409,7 @@ form textarea {
    Responsive Media Queries
 ============================= */
 
-/* Medium devices (<= 992px) */
+/* Large devices (>= 993px) */
 
 @media (min-width: 993px) {
   .contact-form {
@@ -433,10 +438,11 @@ form textarea {
   }
   .form-button {
     grid-area: button;
-    justify-self: right;
-    width: 300px;
+    /* width: 200px; */
   }
 }
+
+/* Medium devices (<= 992px) */
 
 @media (max-width: 992px) {
   #home {
@@ -507,6 +513,10 @@ form textarea {
 
   #contact > .content-text {
     font-size: 0.875rem;
+  }
+
+  .form-button {
+    justify-self: stretch;
   }
 }
 
